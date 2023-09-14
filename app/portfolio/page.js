@@ -35,7 +35,7 @@ export default function Portfolio() {
       name: 'Xcruiter',
       code: 'https://github.com/Marlily/marlily.github.io/tree/main/xcruiter',
       live: 'https://marlily.github.io/xcruiter/',
-      img: '../images/website-1.jpeg'
+      img: 'website-1.jpeg'
     },
 
     {
