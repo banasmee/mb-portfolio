@@ -3,7 +3,12 @@
  */
 
 const nextConfig = {
-   output: 'export'
+   output: 'export',
+
+   images: {
+    
+    formats:['image/webp']
+  },
 }
 
 module.exports = nextConfig
