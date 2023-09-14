@@ -68,11 +68,7 @@ export default function Portfolio() {
 
   ]
 
-  const renderThumbs={() =>
-    mThumbnails.map((thumbnail) => (
-        <Image src={thumbnail.src} alt={thumbnail.alt} key={thumbnail.src} />
-        ))
-    }
+
 
   return (
     <AnimatePresence>
