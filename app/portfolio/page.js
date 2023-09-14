@@ -17,6 +17,8 @@ const TinySlider = dynamic(() => import("tiny-slider-react"), {
   ssr: false,
 });
 
+
+
 //tiny slider settings
 const settings = {
   lazyload: true,
