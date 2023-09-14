@@ -35,7 +35,7 @@ export default function Portfolio() {
       name: 'Xcruiter',
       code: 'https://github.com/Marlily/marlily.github.io/tree/main/xcruiter',
       live: 'https://marlily.github.io/xcruiter/',
-      img: img1
+      img: '/images/website-1.jpeg'
     },
 
     {
@@ -109,11 +109,12 @@ export default function Portfolio() {
 
                     </div>
                     <div className="w-full lg:w-1/2">
-                      <figure className="p-2.5 border-solid border-2 border-[#909090] rounded-xl bg-white max-w-sm mx-auto mt-4 lg:mt-0">
+                      <figure className="p-2.5 border-solid border-2 border-[#909090] rounded-xl bg-white max-w-full mx-auto mt-4 lg:mt-0 relative h-[21rem]">
                         <Image
-                          className={`tns-lazy-img rounded-xl`}
+                          className={`tns-lazy-img rounded-xl max-w-full h-full object-cover object-top p-2.5`}
                           src={el.img}
                           alt="website"
+                          fill
                         />
                       </figure>
                     </div>
