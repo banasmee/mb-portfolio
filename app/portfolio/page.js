@@ -11,23 +11,44 @@ import img2 from '../../public/images/website-2.jpeg';
 import img3 from '../../public/images/website-3.jpeg';
 import img4 from '../../public/images/website-4.jpeg';
 
-//import TinySlider from "tiny-slider-react";
-import 'tiny-slider/dist/tiny-slider.css';
-const TinySlider = dynamic(() => import("tiny-slider-react"), {
-  ssr: false,
-});
 
+import Carousel from 'react-multi-carousel';
+import 'react-multi-carousel/lib/styles.css';
+// const Carousel = dynamic(() => import("react-multi-carouse"), {
+//   ssr: true,
+// });
 
-
-//tiny slider settings
-const settings = {
-  lazyload: true,
-  nav: false,
-  mouseDrag: true,
-  prevButton: '#slider-left',
-  nextButton: '#slider-right',
-  loop: false
+const responsive = {
+  superLargeDesktop: {
+    // the naming can be any, depends on you.
+    breakpoint: { max: 4000, min: 3000 },
+    items: 1
+  },
+  desktop: {
+    breakpoint: { max: 3000, min: 1024 },
+    items: 1
+  },
+  tablet: {
+    breakpoint: { max: 1024, min: 464 },
+    items: 1
+  },
+  mobile: {
+    breakpoint: { max: 464, min: 0 },
+    items: 1
+  }
 };
+
+
+
+// //tiny slider settings
+// const settings = {
+//   lazyload: true,
+//   nav: false,
+//   mouseDrag: true,
+//   prevButton: '#slider-left',
+//   nextButton: '#slider-right',
+//   loop: false
+// };
 
 export default function Portfolio() {
 
@@ -97,17 +118,8 @@ export default function Portfolio() {
               </button>
             </div>
 
-            <Image
-                          className={`tns-lazy-img rounded-xl max-w-full h-full object-cover object-top p-2.5`}
-                          src={img1}
-                          alt="website"
-                          width={800}
-                          height={800}
-                        />
-
-
-            <TinySlider settings={settings}>
-              {portfolioItems.map((el, index) => (
+            <Carousel responsive={responsive}>
+            {portfolioItems.map((el, index) => (
                 <div key={index} className="relative">
 
                   <div className="flex flex-wrap items-center px-8 xl:px-0">
@@ -132,7 +144,12 @@ export default function Portfolio() {
                   </div>
                 </div>
               ))}
-            </TinySlider>
+          </Carousel>;
+
+
+            {/* <TinySlider settings={settings}>
+              
+            </TinySlider> */}
 
           </div>
         </main>
