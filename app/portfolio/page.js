@@ -17,6 +17,9 @@ const TinySlider = dynamic(() => import("tiny-slider-react"), {
   ssr: false,
 });
 
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel } from 'react-responsive-carousel';
+
 //tiny slider settings
 const settings = {
   lazyload: true,
@@ -123,6 +126,34 @@ export default function Portfolio() {
                 </div>
               ))}
             </TinySlider>
+
+            <Carousel showArrows={true} showThumbs={false}>
+            {portfolioItems.map((el, index) => (
+                <div key={index} className="relative">
+
+                  <div className="flex flex-wrap items-center px-8 xl:px-0">
+                    <div className="w-full lg:w-1/2 flex flex-wrap items-center justify-center text-center lg:justify-start lg:text-left">
+                      <h2 className="text-xl lg:text-2xl font-normal uppercase w-full mb-4 lg:mb-10">{el.type} <span className="font-semibold">{el.name}</span></h2>
+
+                      <a target="_blank" rel="noopener noreferrer" href={el.code} className="text-white transition uppercase inline-flex font-semibold py-3.5 px-6 mr-2 bg-turquoise hover:bg-turquoise-hover">KOD</a>
+                      <a target="_blank" rel="noopener noreferrer" href={el.live} className="text-white transition uppercase inline-flex font-semibold py-3.5 px-6 bg-orange hover:bg-orange-hover">demo</a>
+
+                    </div>
+                    <div className="w-full lg:w-1/2">
+                      <figure className="p-2.5 border-solid border-2 border-[#909090] rounded-xl bg-white max-w-full mx-auto mt-4 lg:mt-0 relative h-[21rem]">
+                        <Image
+                          className={`tns-lazy-img rounded-xl max-w-full h-full object-cover object-top p-2.5`}
+                          src={el.img}
+                          alt="website"
+                          width={800}
+                          height={800}
+                        />
+                      </figure>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </Carousel>
 
           </div>
         </main>
