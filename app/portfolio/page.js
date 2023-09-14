@@ -100,7 +100,7 @@ export default function Portfolio() {
               </button>
             </div>
 
-            <Carousel showArrows={true} showThumbs={true}>
+            <Carousel showArrows={true} showThumbs={false}>
               {portfolioItems.map((el, index) => (
                 <div key={index} className="relative">
 
