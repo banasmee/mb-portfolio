@@ -117,6 +117,7 @@ export default function Portfolio() {
                           width={800}
                           height={800}
                         />
+                        <img src={img1} alt="" />
                       </figure>
                     </div>
                   </div>
