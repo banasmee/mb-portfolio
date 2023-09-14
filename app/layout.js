@@ -1,5 +1,3 @@
-"use client"
-
 import './globals.css'
 import { Quicksand, Bree_Serif } from 'next/font/google';
 import dynamic from 'next/dynamic';
