@@ -6,10 +6,10 @@ import dynamic from "next/dynamic";
 import { motion, AnimatePresence } from "framer-motion";
 
 // images
-import img1 from '../../public/images/website-1.jpg';
-import img2 from '../../public/images/website-2.jpg';
-import img3 from '../../public/images/website-3.jpg';
-import img4 from '../../public/images/website-4.jpg';
+import img1 from '../../public/images/website-1.jpeg';
+import img2 from '../../public/images/website-2.jpeg';
+import img3 from '../../public/images/website-3.jpeg';
+import img4 from '../../public/images/website-4.jpeg';
 
 //import TinySlider from "tiny-slider-react";
 import 'tiny-slider/dist/tiny-slider.css';
