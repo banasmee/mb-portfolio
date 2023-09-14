@@ -43,7 +43,7 @@ export default function Portfolio() {
       name: 'Lomundal',
       code: 'https://github.com/Marlily/marlily.github.io/tree/main/lomundal',
       live: 'https://marlily.github.io/lomundal/',
-      img: img2
+      img: '/images/website-2.jpeg'
     },
 
     {
@@ -51,7 +51,7 @@ export default function Portfolio() {
       name: 'Music Show',
       code: 'https://marlily.github.io/music-show/',
       live: 'https://github.com/Marlily/marlily.github.io/tree/main/music-show',
-      img: img3
+      img: '/images/website-3.jpeg'
     },
 
     {
@@ -59,7 +59,7 @@ export default function Portfolio() {
       name: 'Foodie',
       code: 'https://github.com/Marlily/marlily.github.io/tree/main/foodie',
       live: 'https://marlily.github.io/foodie/',
-      img: img4
+      img: '/images/website-4.jpeg'
     },
 
 
@@ -114,7 +114,8 @@ export default function Portfolio() {
                           className={`tns-lazy-img rounded-xl max-w-full h-full object-cover object-top p-2.5`}
                           src={el.img}
                           alt="website"
-                          fill
+                          width={800}
+                          height={800}
                         />
                       </figure>
                     </div>
