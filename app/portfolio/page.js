@@ -101,6 +101,12 @@ export default function Portfolio() {
             </div>
 
             <Carousel showArrows={true} showThumbs={false}>
+                <img src={img1}/>
+                <img src={img2}/>
+                <img src={img3}/>
+            </Carousel>
+
+            <Carousel showArrows={true} showThumbs={false}>
               {portfolioItems.map((el, index) => (
                 <div key={index} className="relative">
 
