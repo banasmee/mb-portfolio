@@ -100,13 +100,12 @@ export default function Portfolio() {
               </button>
             </div>
             
-            {console.log(img1.src)}
-            <img src={img1.src} alt="" />
+
        
             <Carousel showArrows={true} showThumbs={false}>
-                <img src={img1}/>
-                <img src={img2}/>
-                <img src={img3}/>
+              <img src={img1.src} alt="" />
+              <img src={img1.src} alt="" />
+              <img src={img1.src} alt="" />
             </Carousel>
 
             <Carousel showArrows={true} showThumbs={false}>
