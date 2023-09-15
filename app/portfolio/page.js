@@ -127,7 +127,7 @@ export default function Portfolio() {
                   </div>
                 </div>
               ))}
-            </Carousel>
+            </TinySlider>
 
           </div>
         </main>
