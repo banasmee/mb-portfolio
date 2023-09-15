@@ -100,6 +100,7 @@ export default function Portfolio() {
               </button>
             </div>
 
+            <img src={img1}/>
             <Carousel showArrows={true} showThumbs={false}>
                 <img src={img1}/>
                 <img src={img2}/>
