@@ -3,6 +3,7 @@
 import Image from 'next/image';
 import { motion, AnimatePresence } from "framer-motion";
 import img from '../../public/images/envelope.svg'
+import cv from '../../public/cv.pdf'
 
 export default function Contact() {
 
@@ -21,7 +22,7 @@ export default function Contact() {
             <div className="flex flex-wrap justify-center lg:justify-start">
               <div className="w-full lg:w-1/2 flex flex-col items-center justify-center">
                 <a href="mailto:banas.martynaa@gmail.com" className='hover:text-orange transition font-semibold'>banas.martynaa@gmail.com</a>
-                <a href="" className="text-white transition uppercase inline-flex font-semibold py-3.5 px-6 mr-2 mt-8 bg-orange hover:brightness-95">Pobierz CV</a>
+                <a href={cv} target="_blank" className="text-white transition uppercase inline-flex font-semibold py-3.5 px-6 mr-2 mt-8 bg-orange hover:brightness-95">Pobierz CV</a>
               </div>
               <div className="w-full lg:w-1/2">
                 <AnimatePresence>
