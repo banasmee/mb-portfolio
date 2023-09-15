@@ -38,7 +38,7 @@ export default function Portfolio() {
       name: 'Xcruiter',
       code: 'https://github.com/Marlily/marlily.github.io/tree/main/xcruiter',
       live: 'https://marlily.github.io/xcruiter/',
-      img: '/website-1.jpeg'
+      img: img1.src
     },
 
     {
@@ -46,7 +46,7 @@ export default function Portfolio() {
       name: 'Lomundal',
       code: 'https://github.com/Marlily/marlily.github.io/tree/main/lomundal',
       live: 'https://marlily.github.io/lomundal/',
-      img: '/images/website-2.jpeg'
+      img: img2.src
     },
 
     {
@@ -54,7 +54,7 @@ export default function Portfolio() {
       name: 'Music Show',
       code: 'https://marlily.github.io/music-show/',
       live: 'https://github.com/Marlily/marlily.github.io/tree/main/music-show',
-      img: '/images/website-3.jpeg'
+      img: img3.src
     },
 
     {
@@ -62,7 +62,7 @@ export default function Portfolio() {
       name: 'Foodie',
       code: 'https://github.com/Marlily/marlily.github.io/tree/main/foodie',
       live: 'https://marlily.github.io/foodie/',
-      img: '/images/website-4.jpeg'
+      img: img4.src
     },
 
 
@@ -103,7 +103,7 @@ export default function Portfolio() {
 
        
             <Carousel showArrows={true} showThumbs={false}>
-              <img src={img1.src} alt="" />
+             
               <img src={img1.src} alt="" />
               <img src={img1.src} alt="" />
             </Carousel>
@@ -121,9 +121,9 @@ export default function Portfolio() {
 
                     </div>
                     <div className="w-full lg:w-1/2">
-                      <figure className="p-2.5 border-solid border-2 border-[#909090] rounded-xl bg-white max-w-full mx-auto mt-4 lg:mt-0 relative h-[21rem]">
-                        <Image
-                          className={`tns-lazy-img rounded-xl max-w-full h-full object-cover object-top p-2.5`}
+                      <figure className="p-2.5 border-solid border-2 border-[#909090] rounded-xl bg-white max-w-full mx-auto mt-4 lg:mt-0">
+                        <img
+                          className={`rounded-xl max-w-full h-full object-cover object-top p-2.5`}
                           src={el.img}
                           alt="website"
                           width={800}
