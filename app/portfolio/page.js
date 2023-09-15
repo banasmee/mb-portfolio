@@ -101,14 +101,7 @@ export default function Portfolio() {
             </div>
             
 
-       
-            <Carousel showArrows={true} showThumbs={false}>
-             
-              <img src={img1.src} alt="" />
-              <img src={img1.src} alt="" />
-            </Carousel>
-
-            <Carousel showArrows={true} showThumbs={false}>
+            <TinySlider settings={settings}>
               {portfolioItems.map((el, index) => (
                 <div key={index} className="relative">
 
