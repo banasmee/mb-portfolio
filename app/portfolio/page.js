@@ -10,6 +10,18 @@ import img1 from '../../public/images/website-1.jpeg';
 import img2 from '../../public/images/website-2.jpeg';
 import img3 from '../../public/images/website-3.jpeg';
 import img4 from '../../public/images/website-4.jpeg';
+import img5 from '../../public/images/website-5.jpeg';
+
+// icons
+import html from '../../public/images/skills-html.svg'
+import css from '../../public/images/skills-css.svg'
+import js from '../../public/images/skills-js.svg'
+import sass from '../../public/images/skills-sass.svg'
+import tailwind from '../../public/images/skills-tail.svg'
+import bootstrap from '../../public/images/skills-bootstrap.svg'
+import wordpress from '../../public/images/skills-wp.svg'
+import react from '../../public/images/skills-react.svg'
+
 
 //import TinySlider from "tiny-slider-react";
 import 'tiny-slider/dist/tiny-slider.css';
@@ -38,7 +50,8 @@ export default function Portfolio() {
       name: 'Xcruiter',
       code: 'https://github.com/Marlily/marlily.github.io/tree/main/xcruiter',
       live: 'https://marlily.github.io/xcruiter/',
-      img: img1.src
+      img: img1.src,
+      technologies: [html.src, sass.src, js.src]
     },
 
     {
@@ -46,7 +59,8 @@ export default function Portfolio() {
       name: 'Lomundal',
       code: 'https://github.com/Marlily/marlily.github.io/tree/main/lomundal',
       live: 'https://marlily.github.io/lomundal/',
-      img: img2.src
+      img: img2.src,
+      technologies: [html.src, sass.src, js.src]
     },
 
     {
@@ -54,7 +68,8 @@ export default function Portfolio() {
       name: 'Music Show',
       code: 'https://marlily.github.io/music-show/',
       live: 'https://github.com/Marlily/marlily.github.io/tree/main/music-show',
-      img: img3.src
+      img: img3.src,
+      technologies: [html.src, sass.src, js.src]
     },
 
     {
@@ -62,7 +77,17 @@ export default function Portfolio() {
       name: 'Foodie',
       code: 'https://github.com/Marlily/marlily.github.io/tree/main/foodie',
       live: 'https://marlily.github.io/foodie/',
-      img: img4.src
+      img: img4.src,
+      technologies: [html.src, sass.src, js.src]
+    },
+
+    {
+      type: 'Strona internetowa',
+      name: 'TSZOS',
+      code: '',
+      live: 'https://tomekszostak.com/',
+      img: img5.src,
+      technologies: [html.src, sass.src, js.src, wordpress.src]
     },
 
 
@@ -78,8 +103,8 @@ export default function Portfolio() {
         transition={{ delay: 0.4, duration: 0.3 }}
       >
 
-        <main className="pt-10 lg:pt-28 pb-36">
-          <div className="container relative z-30">
+        <main className="pt-20 lg:pt-28 pb-36">
+          <div className="container relative z-30 mb-36">
             <h1 className='text-4xl uppercase font-semibold text-center mb-12 lg:mb-24'>Projekty</h1>
 
             <div className="lg:absolute w-full top-[60%] left-0 translate-y-[-50%] flex justify-end lg:justify-between px-10 z-40">
@@ -107,16 +132,24 @@ export default function Portfolio() {
 
                   <div className="flex flex-wrap items-center px-8 xl:px-0">
                     <div className="w-full lg:w-1/2 flex flex-wrap items-center justify-center text-center lg:justify-start lg:text-left">
-                      <h2 className="text-xl lg:text-2xl font-normal uppercase w-full mb-4 lg:mb-10">{el.type} <span className="font-semibold">{el.name}</span></h2>
+                      <h2 className="text-xl lg:text-2xl font-normal uppercase w-full mb-4">{el.type} <span className="font-semibold">{el.name}</span></h2>
 
-                      <a target="_blank" rel="noopener noreferrer" href={el.code} className="text-white transition uppercase inline-flex font-semibold py-3.5 px-6 mr-2 bg-turquoise hover:bg-turquoise-hover">KOD</a>
-                      <a target="_blank" rel="noopener noreferrer" href={el.live} className="text-white transition uppercase inline-flex font-semibold py-3.5 px-6 bg-orange hover:bg-orange-hover">demo</a>
+                      <ul className="flex gap-4 w-full mb-4 justify-center lg:justify-start">
+                        {el.technologies.map( (icon, i) => (
+                          <li key={i} className="flex items-center justify-center">
+                            <img src={icon} alt="icon" className="max-h-12"/>
+                          </li>
+                        ) )}
+                      </ul>
+
+                      {el.code && <a target="_blank" rel="noopener noreferrer" href={el.code} className="text-white transition uppercase inline-flex font-semibold py-3.5 px-6 mr-2 bg-turquoise hover:bg-turquoise-hover">KOD</a>}
+                      {el.live && <a target="_blank" rel="noopener noreferrer" href={el.live} className="text-white transition uppercase inline-flex font-semibold py-3.5 px-6 bg-orange hover:bg-orange-hover">demo</a>}
 
                     </div>
                     <div className="w-full lg:w-1/2">
-                      <figure className="p-2.5 border-solid border-2 border-[#909090] rounded-xl bg-white max-w-full mx-auto mt-4 lg:mt-0">
+                      <figure className="p-2 border-solid border-2 border-[#909090] rounded-xl bg-white max-w-full mx-auto mt-4 lg:mt-0">
                         <img
-                          className={`rounded-xl max-w-full h-full object-cover object-top p-2.5`}
+                          className={`rounded-xl max-w-full h-full object-cover object-top`}
                           src={el.img}
                           alt="website"
                           width={800}

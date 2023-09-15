@@ -2,6 +2,7 @@
 
 import Image from 'next/image';
 import shape from '../../public/images/footer.svg';
+import shape2 from '../../public/images/footer-white.svg';
 import circle from '../../public/images/circle.png';
 import { usePathname } from 'next/navigation';
 import { motion, AnimatePresence } from "framer-motion";
@@ -15,14 +16,20 @@ const Footer = () => {
         <footer className="fixed left-0 bottom-0 w-full z-40">
 
              <Image 
-                className="w-full h-auto absolute left-0 bottom-0"
+                className="w-full h-auto absolute left-0 bottom-0 z-30"
                 src={shape}
+                alt="background"
+            />
+
+            <Image 
+                className="w-full h-auto absolute left-0 bottom-0 z-20"
+                src={shape2}
                 alt="background"
             />
 
 
             {pathname !== '/' ? (
-                <div className='absolute bottom-4 left-4 flex items-center'>
+                <div className='absolute bottom-4 left-4 flex items-center z-40'>
                     <AnimatePresence>
                         <motion.div
                         initial={{scale: 0}}
