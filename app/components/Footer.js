@@ -22,7 +22,7 @@ const Footer = () => {
             />
 
             <Image 
-                className="w-full h-auto absolute left-0 bottom-0 z-20"
+                className="w-full h-auto absolute left-0 bottom-0 z-20 lg:hidden"
                 src={shape2}
                 alt="background"
             />
