@@ -3,7 +3,7 @@
 import Image from 'next/image';
 import shape from '../../public/images/footer.svg';
 import shape2 from '../../public/images/footer-white.svg';
-import circle from '../../public/images/circle.png';
+import circle from '../../public/images/logo-circle.png';
 import { usePathname } from 'next/navigation';
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -37,7 +37,7 @@ const Footer = () => {
                         transition= {{delay: 0.4, duration: 0.3}}
                         >
                         <Image 
-                            className="mr-6 h-[5rem] w-[5rem] xl:h-[9.25rem] xl:w-[9.25rem]"
+                            className="mr-4 xl:mr-6 h-[6rem] xl:h-[10.25rem] w-auto"
                             src={circle}
                             alt="background"
                         />
