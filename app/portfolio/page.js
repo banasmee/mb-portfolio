@@ -104,7 +104,7 @@ export default function Portfolio() {
       >
 
         <main className="pt-20 lg:pt-28 pb-36">
-          <div className="container relative z-30 mb-36">
+          <div className="container relative z-50 mb-36">
             <h1 className='text-4xl uppercase font-semibold text-center mb-12 lg:mb-24'>Projekty</h1>
 
             <div className="lg:absolute w-full top-[60%] left-0 translate-y-[-50%] flex justify-end lg:justify-between px-10 z-40">
