@@ -10,7 +10,8 @@ import img1 from '../../public/images/website-1.jpeg';
 import img2 from '../../public/images/website-2.jpeg';
 import img3 from '../../public/images/website-3.jpeg';
 import img4 from '../../public/images/website-4.jpeg';
-import img5 from '../../public/images/website-5.jpeg';
+import img5 from '../../public/images/website-5.jpg';
+import img6 from '../../public/images/website-6.png';
 
 // icons
 import html from '../../public/images/skills-html.svg'
@@ -21,6 +22,7 @@ import tailwind from '../../public/images/skills-tail.svg'
 import bootstrap from '../../public/images/skills-bootstrap.svg'
 import wordpress from '../../public/images/skills-wp.svg'
 import react from '../../public/images/skills-react.svg'
+import acf from '../../public/images/skills-acf.png'
 
 
 //import TinySlider from "tiny-slider-react";
@@ -82,14 +84,22 @@ export default function Portfolio() {
     },
 
     {
-      type: 'Strona internetowa',
+      type: 'Strona internetowa, projekt graficzny',
       name: 'TSZOS',
       code: '',
       live: 'https://tomekszostak.com/',
       img: img5.src,
-      technologies: [html.src, sass.src, js.src, wordpress.src]
+      technologies: [html.src, sass.src, js.src, wordpress.src, acf.src]
     },
 
+    {
+      type: 'Strona internetowa, projekt graficzny',
+      name: 'WAMPack',
+      code: '',
+      live: 'https://wampack.pl/',
+      img: img6.src,
+      technologies: [html.src, sass.src, js.src, wordpress.src, acf.src]
+    },
 
   ]
 
