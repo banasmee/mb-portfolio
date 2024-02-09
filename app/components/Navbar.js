@@ -14,7 +14,7 @@ const Navbar = () => {
     const navLinks = [
         {
             path: '/',
-            title: 'Home',
+            title: 'Strona główna',
             id: 1
         },
         {
