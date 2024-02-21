@@ -12,7 +12,7 @@ export const metadata = {
   title: 'Portfolio MB',
   description: '',
   icons: {
-    icon: '/images/favicon.ico'
+    icon: '/favicon.ico'
   },
 }
 
