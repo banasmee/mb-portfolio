@@ -52,7 +52,7 @@ const Footer = () => {
                         transition= {{delay: 0.6, duration: 0.5}}
                         >
                         <h2 className='text-2xl lg:text-4xl uppercase font-medium font-second tracking-wide mb-1 lg:mb-3 mt-2'>Martyna Banaś</h2>
-                        <h3 className='text-1xl lg:text-2xl uppercase'>Front end developer</h3>
+                        <h3 className='text-1xl lg:text-2xl uppercase'>Web Developer</h3>
                         </motion.div>
                     </AnimatePresence>
 
