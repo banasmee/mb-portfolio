@@ -11,6 +11,9 @@ export const bree = Bree_Serif({ subsets: ['latin'], weight: '400', variable: '-
 export const metadata = {
   title: 'Portfolio MB',
   description: '',
+  icons: {
+    icon: '/images/favicon.ico'
+  },
 }
 
 
